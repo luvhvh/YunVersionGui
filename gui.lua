@@ -37,6 +37,7 @@ ButtonV2.TextColor3 = Color3.fromRGB(255, 255, 255)
 ButtonV2.TextSize = 14.000
 ButtonV2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(("http://135.125.132.19:8080/scriptv2/%s"):format(scriptID)))();
+    Main.Visible = false
 end)
 
 ButtonV3.Name = "ButtonV3"
@@ -51,4 +52,5 @@ ButtonV3.TextColor3 = Color3.fromRGB(255, 255, 255)
 ButtonV3.TextSize = 14.000
 ButtonV3.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(("http://135.125.132.19:8080/script/%s"):format(scriptID)))();
+	Main.Visible = false
 end)
